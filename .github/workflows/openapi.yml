@@ -21,3 +21,5 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
+      - name: Generate TypeScript types
+        run: pnpm run generate
