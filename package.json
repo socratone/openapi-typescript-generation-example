@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "generate": "./generate.sh"
+    "generate": "./generate.sh",
+    "openapi-ts": "openapi-ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@hey-api/client-fetch": "^0.13.1"
+  },
+  "devDependencies": {
+    "@hey-api/openapi-ts": "^0.73.0"
+  }
 }

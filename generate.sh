@@ -10,6 +10,10 @@ echo
 echo "🌳 node version: $(node -v)"
 echo 
 
+echo "📦 필요한 패키지를 설치합니다."
+npm install
+echo
+
 echo "💾 타입 생성에 필요한 openapi.json 파일을 $SWAGGER_URL 에서 다운로드합니다."
 echo
  
@@ -39,3 +43,9 @@ echo
 
 head -n 1 "openapi.json" | cut -c 1-300 | sed 's/$/.../'
 echo
+
+echo "✏️ openapi-ts를 이용해서 코드를 생성합니다."
+npm run openapi-ts -- \
+  -i openapi.json \
+  -o src/generated \
+  -c @hey-api/client-fetch
