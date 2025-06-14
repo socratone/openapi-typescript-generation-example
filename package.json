@@ -1,0 +1,12 @@
+{
+  "name": "openapi-typescript-generation-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "generate": "./generate.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
